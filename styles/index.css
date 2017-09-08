@@ -59,7 +59,7 @@ html, body {
 	width: 100vw;
 	height: 100vh;
 /*	border: 1px red solid;*/
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 	
 	display: flex;
 	align-content: flex-end;
@@ -232,12 +232,67 @@ main article p {
 	font-size: 36pt;
 }
 
-@keyframes changeDisplay {
+@keyframes changeForm {
+    0% {transform: translate(-5vw, 0); opacity:0;}
+    100% {transform: translate(0, 0); opacity: 1;}
+}
+
+.form-illustration span {
+/* 	font-size: 144pt; */
+	/* font-family: gotham; */
+	font-size: 125%;
+	/* color: pink; */
+	display: block;
+/* 	text-transform: uppercase; */
+	transform: translate(0, 0);
+	opacity: 1;
+	
+	animation-name: changeForm;
+/*     animation-duration: 1s; */
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+    animation-direction: alternate;	
+}
+
+.form1 {
+	animation-duration: 1s;
+	text-transform: lowercase;
+}
+
+.form2 {
+	animation-duration: 1.5s;
+	text-transform: capitalize;
+}
+
+.form3 {
+	animation-duration: 2s;
+	font-style: italic;
+}
+
+.form4 {
+	animation-duration: 2.5s;
+	text-transform: uppercase;
+}
+
+.form5 {
+	display: none !important;
+	animation-duration: 3s;
+	font-style: oblique;
+}
+
+/*Structure Illustration*/
+
+.structure-illustration {
+	font-size: 24pt;
+}
+
+@keyframes changeStructure {
     0% {transform:translate(0px); opacity: 0;}
     100% {transform:translate(9999px);  opacity: 1;}
 }
 
-.form-illustration span {
+.structure-illustration span {
 /* 	font-size: 144pt; */
 	/* font-family: gotham; */
 	font-size: 125%;
@@ -246,7 +301,7 @@ main article p {
 /* 	color: pink; */
 	display: block;
 	
-	animation-name: changeDisplay;
+	animation-name: changeStructure;
     /* animation-duration: 1s; */
 	animation-timing-function: ease;
 	animation-delay: 0s;
@@ -254,29 +309,84 @@ main article p {
     animation-direction: alternate;	
 }
 
-.form1 {
+.structure1 {
 	opacity: 1 !important;
 	animation-duration: 1s;
 	font-family: serif;
 }
 
-.form2 {
+.structure2 {
 	animation-duration: 1.5s;
 	font-family: sans-serif;
 }
 
-.form3 {
+.structure3 {
 	animation-duration: 2s;
 	font-family: monospace;
 }
 
-.form4 {
+.structure4 {
 	animation-duration: 2.5s;
 	font-family: cursive;
 
 }
 
-.form5 {
+.structure5 {
+	animation-duration: 3s;
+	font-family: fantasy;
+}
+
+/*texture Illustration*/
+
+.texture-illustration {
+	font-size: 24pt;
+}
+
+@keyframes changeTexture {
+    0% {transform:translate(0px); opacity: 0;}
+    100% {transform:translate(9999px);  opacity: 1;}
+}
+
+.texture-illustration span {
+/* 	font-size: 144pt; */
+	/* font-family: gotham; */
+	font-size: 125%;
+	opacity: 1;
+/* 	transform:translate(99px); */
+/* 	color: pink; */
+	display: block;
+	
+	animation-name: changeTexture;
+    /* animation-duration: 1s; */
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+    animation-direction: alternate;	
+}
+
+.texture1 {
+	opacity: 1 !important;
+	animation-duration: 1s;
+	font-family: serif;
+}
+
+.texture2 {
+	animation-duration: 1.5s;
+	font-family: sans-serif;
+}
+
+.texture3 {
+	animation-duration: 2s;
+	font-family: monospace;
+}
+
+.texture4 {
+	animation-duration: 2.5s;
+	font-family: cursive;
+
+}
+
+.texture5 {
 	animation-duration: 3s;
 	font-family: fantasy;
 }
