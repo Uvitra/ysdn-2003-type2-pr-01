@@ -339,54 +339,183 @@ main article p {
 /*texture Illustration*/
 
 .texture-illustration {
-	font-size: 24pt;
+	font-size: 4vmax;
 }
 
 @keyframes changeTexture {
-    0% {transform:translate(0px); opacity: 0;}
-    100% {transform:translate(9999px);  opacity: 1;}
+    0% {transform:translate(-5vw); opacity: 0;}
+    100% {transform:translate(0px);  opacity: 1;}
 }
 
-.texture-illustration span {
+.texture-illustration div {
+	display: block;
+	transform:translate(0vw, -10vh);
+/* 	border: 1px red solid; */
+}
+
+.texture-illustration div span {
 /* 	font-size: 144pt; */
 	/* font-family: gotham; */
-	font-size: 125%;
+	font-size: 5vmax;
 	opacity: 1;
 /* 	transform:translate(99px); */
-/* 	color: pink; */
+	color: pink;
 	display: block;
 	
 	animation-name: changeTexture;
-    /* animation-duration: 1s; */
+/*     animation-duration: 1s; */
 	animation-timing-function: ease;
 	animation-delay: 0s;
 	animation-iteration-count: 1;
     animation-direction: alternate;	
+    line-height: .75;
+}
+
+.top-layer {
+	position:absolute;
+	left: 45%;
+	border: 50%;
+/*     background-color:red; */
+	z-index: 9999;
 }
 
 .texture1 {
-	opacity: 1 !important;
 	animation-duration: 1s;
-	font-family: serif;
+	transform:translate(0px);
+	margin-right: 0;
 }
 
 .texture2 {
 	animation-duration: 1.5s;
-	font-family: sans-serif;
+	transform:translate(0px);
+	margin-right: 1.2vw;
 }
 
 .texture3 {
 	animation-duration: 2s;
-	font-family: monospace;
+	transform:translate(0px);
+	margin-right: 2.4vw;
 }
 
 .texture4 {
 	animation-duration: 2.5s;
-	font-family: cursive;
-
+	transform:translate(0px);
+	margin-right: 3.6vw;
 }
 
 .texture5 {
+/* 	display: none !important; */
 	animation-duration: 3s;
-	font-family: fantasy;
+	transform:translate(0px);
+	margin-right: 4.8vw;
+}
+
+/*Colour Illustration*/
+
+.illustration-container {
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+	
+	font-size: 18pt;
+}
+
+.colour-illustration {
+	width: 300pt;
+	height: 200pt;
+/* 	border: red 1px solid; */
+	
+	transform: translate(-4vw, 5vh);
+}
+
+@keyframes colourChange {
+    0% {color: hsla(0, 100%, 50%, 1);}
+	25% {color: hsla(90, 100%, 50%, 1);}
+    50% {color: hsla(180, 100%, 50%, 1);}
+    75% {color: hsla(270, 100%, 50%, 1);}
+    100% {color: hsla(360, 100%, 50%, 1);}
+}
+
+.colour-illustration span {
+	font-size: 72pt;
+	font-weight:normal;
+    animation-name: colourChange;
+    animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;	
+}
+
+/*direction Illustration*/
+
+.illustration-container {
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+	
+	font-size: 36pt;
+}
+
+.direction-illustration {
+	width: 40%;
+	height: 40%;
+/* 	border: red 1px solid; */
+	
+	transform: translate(-4vw, 5vh);
+}
+
+@keyframes changeDirection {
+    0% 		{transform: rotate(0deg)	translate(-4vmax, 4vmax);}
+ 	25% 	{transform: rotate(90deg)	translate(-4vmax, -4vmax);}
+    50% 	{transform: rotate(180deg)	translate(4vmax, -4vmax);}
+    75% 	{transform: rotate(270deg)	translate(4vmax, 4vmax);}
+    100% 	{transform: rotate(360deg)	translate(-4vmax, 4vmax);}
+}
+
+@keyframes changeDirection2 {
+    0% 		{transform: rotate(-90deg)	translate(10vw, 20vh);}
+ 	25% 	{transform: rotate(0deg)	translate(10vw, 20vh);}
+    50% 	{transform: rotate(90deg)	translate(10vw, 20vh);}
+    75% 	{transform: rotate(180deg)	translate(10vw, 20vh);}
+    100% 	{transform: rotate(270deg)	translate(10vw, 20vh);}
+}
+
+@keyframes changeDirection3 {
+    0% 		{transform: rotate(-90deg)	translate(10vmax, 25vmax);}
+ 	25% 	{transform: rotate(0deg)	translate(10vmax, 25vmax);}
+    50% 	{transform: rotate(90deg)	translate(10vmax, 25vmax);}
+    75% 	{transform: rotate(180deg)	translate(10vmax, 25vmax);}
+    100% 	{transform: rotate(270deg)	translate(10vmax, 25vmax);}
+}
+
+@keyframes changeDirection4 {
+    0% 		{transform: rotate(-90deg)	translate(100px, 200px);}
+ 	25% 	{transform: rotate(0deg)	translate(100px, 200px);}
+    50% 	{transform: rotate(90deg)	translate(100px, 200px);}
+    75% 	{transform: rotate(180deg)	translate(100px, 200px);}
+    100% 	{transform: rotate(270deg)	translate(100px, 200px);}
+}
+
+.direction-illustration span {
+	font-size: 8vh;
+	font-weight:normal;
+	display: block;
+/* 	border: 1px red solid; */
+	
+/* 	translate(-200px, 200px); */
+/* 	transform: translate(100px, 250px); */
+	transform: rotate(270deg) translate(100px, 200px);
+/* 	transform: rotateZ(30deg); */
+/* 	transform: rotate3d(-4vw, 5vh, 0, 0deg); */
+    animation-name: changeDirection4;
+    animation-duration: 4s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+/*     animation-direction: alternate;	 */
 }
