@@ -110,12 +110,15 @@ nav {
 .nav-item {
 	height: 5vmin;
 /*	padding: 11pt 0;*/
-/*	border: 1px solid red;*/
+/* border: 1px solid red; */
 	
 	display: flex;
 	align-content: center;
 	justify-content: center;
 	align-items: center;
+	text-align: left;
+	
+/* 	margin-left: 2vw; */
 }
 
 .nav-selected {
@@ -140,23 +143,23 @@ a:hover {
 
 /*General Illustration*/
 
-main {
+.7-contasts-main {
 	width: 75vw;
 /*	height: 100%;*/
 	
 /*	border: pink 1px solid;*/
 }
 
-main article {
+.7-contasts-main article {
 	height: 25vh;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
 }
 
-main article p {
+p {
 	color: hsla(0,0%,35%,1.00);
-	width: 400pt;
+	max-width: 400pt;
 	padding-left: 4vmin;
 	padding-bottom: 6vmin;
 	font-size: 12pt;
@@ -518,4 +521,61 @@ main article p {
 	animation-delay: 0s;
 	animation-iteration-count: 1;
 /*     animation-direction: alternate;	 */
+}
+
+/* Biography */
+
+.biography-main {
+	width: 75vw;
+	height: 65vh;
+	
+	background-image: url("../images/Dair3.jpg");
+	background-size: auto 100vmax;
+	background-position: 75% 50%;
+	background-repeat: no-repeat;
+/* 	background-color: pink; */
+/* 	opacity: .25; */
+}
+
+.biography-container {
+	height: 65vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.biography-container h1 {
+	font-size: 8vw;
+	margin-bottom: 2vh;
+	margin-left: 2vh;
+	font-weight: bold;
+	color: hsla(210, 15%, 15%, .9);
+}
+
+.biography-article {
+	height: 35vh;
+/* 	display: none; */
+	background-color: hsla(210, 2%, 15%, .75);
+	overflow-y: scroll;
+}
+
+.biography-article h2 {
+	font-weight: 700;
+	font-size: 2em;
+	color: white;
+	
+	padding-left: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+
+.biography-article p {
+	color: hsla(210, 5%, 90%, 1);
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.biography-article p:last-child {
+	margin-bottom: 4vh;
 }
