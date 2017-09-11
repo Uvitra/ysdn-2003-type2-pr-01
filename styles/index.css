@@ -63,17 +63,356 @@ html, body {
 	
 	display: flex;
 	align-content: flex-end;
+	flex-wrap: wrap;
 	
 	background: hsla(210,2.5%,95%,1.00);
 }
 
 /* ----------------------------------------------
 
-				Landing CSS
+				Home CSS
 
 ---------------------------------------------- */
 
+.home-header {
+	width: 100vw;
+	height: auto;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+	justify-content: flex-start;
+/* 	align-items: flex-end; */
+	align-content: flex-end;
+	
+/* 	border: 1px red solid; */
+}
 
+.home-header h1 {
+	font-size: 10vmin;
+	font-weight: bold;
+	color: hsla(210, 5%, 10%, 1);
+	display: block;
+	
+/* 	border: 1px red solid; */
+}
+
+.home-header h2 {
+	font-size: 5vmax;
+	font-weight: bold;
+	color: hsla(210, 5%, 50%, 1);
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	display: block;
+	
+/* 	border: 1px red solid; */
+}
+
+.home-main {
+/* 	width: 100vw; */
+/* 	height: 50vh; */
+}
+
+.home-links {
+	width: 100vmax;
+	height: 50vh;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.home-links a {
+	width: 25vw;
+	height: 25vmin;
+	
+	background: hsla(210, 5%, 80%, 1);
+/* 	box-shadow: 0 0 10pt hsla(210, 5%, 5%, .15); */
+/* 	border: 1px hsla(0, 0%, 80%, 1) solid; */
+/* 	margin: -1px; */
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	
+	font-size: 5vw;
+}
+
+/* .home-links a span, .home-links a ul li {
+	color: hsla(210, 15%, 15%, 1);
+} */
+
+.home-size {
+	font-size: 8vw;
+	color: hsla(210, 5%, 5%, 1);
+
+	animation-name: homeSize;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes homeSize {
+    0% {	font-size: 2vw;}
+    10% {	font-size: 2vw;}
+    40% {	font-size: 8vw;}
+    100% {	font-size: 8vw;}
+}
+
+.home-weight {
+	font-weight: 900;
+	color: hsla(210, 5%, 5%, 1);
+
+	animation-name: homeWeight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes homeWeight {
+    0% {	font-weight: 100;}
+    10% {	font-weight: 100;}
+    40% {	font-weight: 900;}
+    100% {	font-weight: 900;}
+}
+
+.home-form {
+/* 	border: 1px red solid; */
+	font-size: 5vw;
+	color: hsla(210, 5%, 5%, 1);
+	
+	animation-name: homeForm;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.home-form li {
+/* 	border: 1px red solid; */
+	/* display: block; */
+/* 	transform: translate(0px, 0px); */
+	color: hsla(210, 5%, 50%, 0) !important;
+	font-size: 4vw;
+}
+
+@keyframes homeForm {
+    0% {	}
+    10% {	}
+    40% {	}
+    100% {	}
+}
+
+.home-form li:nth-child(1) {
+	text-transform: uppercase;
+  animation: winkle 1s linear;
+}
+.home-form li:nth-child(2) {
+	text-transform: lowercase;
+  animation: winkle 1s linear 2s;
+}
+.home-form li:nth-child(3) {
+	font-size: 5vw;
+	font-style: italic;
+	color: hsla(210, 5%, 5%, 1) !important;
+  animation: winkle-permanent 4s linear 0s;
+}
+.home-form li:nth-child(4) {
+	text-transform: capitalize;
+  animation: winkle 1s linear 1s;
+}
+/* .home-form li:nth-child(5) {
+	text-transform: lowercase;
+  animation: winkle 1s linear 1s;
+} */
+
+@keyframes winkle {
+  0%, 100% {	color: hsla(210, 5%, 5%, 0);}
+  25%, 75% {		color: hsla(210, 5%, 5%, 1);}
+}
+
+@keyframes winkle-permanent {
+  0%, 80% {		color: hsla(210, 5%, 5%, 0);}
+  90%, 100% {	color: hsla(210, 5%, 5%, 1);}
+}
+
+.home-structure {
+/* 	border: 1px red solid; */
+	font-size: 5vw;
+	text-align: center;
+	color: hsla(210, 5%, 5%, 1);
+	
+	animation-name: homeForm;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.home-structure li {
+/* 	border: 1px red solid; */
+/* 	display: block; */
+	transform: translate(0px, 0px);
+	color: hsla(210, 5%, 80%, 1);
+	font-size: 4vw;
+}
+
+.home-structure li:nth-child(1) {
+	font-family: cursive;
+  animation: changeStructure 1s linear;
+}
+.home-structure li:nth-child(2) {
+	font-family: serif;
+  animation: changeStructure 1s linear 2s;
+}
+.home-structure li:nth-child(3) {
+/* 	font-size: 5vw; */
+	font-family: sans-serif;
+  animation: changeStructurePermanent 4s linear 0s;
+}
+.home-structure li:nth-child(4) {
+	font-family: fantasy;
+  animation: changeStructure 1s linear 3s;
+}
+.home-structure li:nth-child(5) {
+	font-family: monospace;
+  animation: changeStructure 1s linear 1s;
+}
+
+@keyframes changeStructure {
+  0% {		color: hsla(210, 5%, 5%, 0); transform: translate(0px, 20px)}
+  100% {	color: hsla(210, 5%, 5%, 1);}
+}
+
+@keyframes changeStructurePermanent {
+  0%, 80% {		}
+  90%, 100% {	}
+}
+
+
+.home-texture li {
+	transform: translate(-1vw, 0);
+	font-size: 4vw;
+	line-height: .33;
+	color: hsla(210, 5%, 5%, 1);
+
+	animation-name: homeTexture;
+    animation-duration: 5s !important;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+/*     border: 1px solid red; */
+}
+
+.home-texture li:nth-child(1) {
+	margin-left: -.75vw;
+	opacity: .25;
+	animation: homeTexture 5s ease 0s infinite normal;
+}
+
+.home-texture li:nth-child(2) {
+	margin-left: .0vw;
+		opacity: .5;
+	animation: homeTexture 5s ease .25s infinite normal;
+}
+
+.home-texture li:nth-child(3) {
+	margin-left: .75vw;
+		opacity: .75;
+	animation: homeTexture 5s ease .5s infinite normal;
+}
+
+.home-texture li:nth-child(4) {
+	margin-left: 1.5vw;
+	animation: homeTexture 5s ease .75s infinite normal;
+}
+
+@keyframes homeTexture {
+    0%, 75% 	{	transform: translate(-1vw, 0);}
+    25%, 50%	{	transform: translate(1vw, 0);}
+/*     60%, 80% {	transform: translate(-2vw, 0);} */
+/*     100% {	transform: translate(0, 0);} */
+}
+
+
+.home-colour {
+	color: hsla(0, 100%, 50%, 1);
+
+	animation-name: homeColour;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes homeColour {
+    0% {	color: hsla(0, 100%, 50%, 1);}
+    25% {	color: hsla(90, 100%, 50%, 1);}
+    50% {	color: hsla(180, 100%, 50%, 1);}
+    75% {	color: hsla(270, 100%, 50%, 1);}
+    100% {	color: hsla(360, 100%, 50%, 1);}
+}
+
+.home-direction {
+	transform: rotate(30deg);
+	color: hsla(210, 5%, 5%, 1);
+
+	animation-name: homeDirection;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes homeDirection {
+    0%, 15% {	transform: rotate(15deg);}
+    16%, 30% {	transform: rotate(-25deg);}
+	31%, 45% {	transform: rotate(35deg);}
+	46%, 60% {	transform: rotate(-15deg);}
+    61%, 100% {	transform: rotate(0deg);}
+}
+
+.home-links a:last-child {
+	background-image: url("../images/Dair3.jpg");
+	background-size: auto;
+	background-position: 80%, 40%;
+	background-color: red;
+	/* mix-blend-mode: hard-light; */
+	
+/* 	opacity: .5; */
+/* 	border: 1px solid red; */
+}
+
+.home-links a div {
+	width: 100%;
+	height: 100%;
+	
+	background-color: hsla(210, 5%, 95%, .5);
+	
+/* 	border: 1px red solid; */
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-bio {
+	text-align: center;
+	color: hsla(210, 5%, 5%, .8) !important;
+/* 	opacity: 1 !important; */
+}
 
 /* ----------------------------------------------
 
