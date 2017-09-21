@@ -91,7 +91,7 @@ html, body {
 
 .home-header h1 {
 	font-size: 10vmin;
-	font-weight: bold;
+	font-weight: 900;
 	color: hsla(210, 5%, 10%, 1);
 	display: block;
 	
@@ -100,7 +100,7 @@ html, body {
 
 .home-header h2 {
 	font-size: 5vmax;
-	font-weight: bold;
+	font-weight: 700;
 	color: hsla(210, 5%, 50%, 1);
 	margin-top: 2vh;
 	margin-bottom: 2vh;
@@ -137,7 +137,7 @@ html, body {
 	align-items: center;
 	align-content: center;
 	
-	font-size: 5vw;
+/*	font-size: 5vw;*/
 }
 
 /* .home-links a span, .home-links a ul li {
@@ -145,102 +145,76 @@ html, body {
 } */
 
 .home-size {
-	font-size: 8vw;
+	font-size: 5vw;
+/*	font-weight: bold;*/
 	color: hsla(210, 5%, 5%, 1);
+}
+
+.home-size:hover {
+/*	font-size: 8vw;*/
+/*	color: hsla(210, 5%, 5%, 1);*/
+	background-color: hsla(223,67%,46%,1) !important;
 
 	animation-name: homeSize;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+/*    animation-direction: alternate;*/
+	
+	transition: background-color 0.5s ease-in-out 0s;
 }
 
 @keyframes homeSize {
-    0% {	font-size: 2vw;}
-    10% {	font-size: 2vw;}
-    40% {	font-size: 8vw;}
-    100% {	font-size: 8vw;}
+    0%, 30%, 70%, 100% {	font-size: 5vw;}
+    40%, 60%	{	font-size: 2vw;}
 }
 
 .home-weight {
+	font-size: 5vw;
+	font-weight: 400;
+	color: hsla(210, 5%, 5%, 1);
+}
+
+.home-weight:hover {
 	font-weight: 900;
 	color: hsla(210, 5%, 5%, 1);
+	background-color: hsla(22,100%,49%,1.00) !important;
+	transition: background-color 0.5s ease-in-out 0s;
 
 	animation-name: homeWeight;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+/*    animation-direction: alternate;*/
 }
 
 @keyframes homeWeight {
-    0% {	font-weight: 100;}
-    10% {	font-weight: 100;}
-    40% {	font-weight: 900;}
-    100% {	font-weight: 900;}
+/*	0% { font-weight:400;}*/
+    0%, 10%, 90%, 100% {	font-weight: 100;}
+    40%, 60% {	font-weight: 900;}
+
 }
 
 .home-form {
-/* 	border: 1px red solid; */
 	font-size: 5vw;
+	font-weight: 400;
 	color: hsla(210, 5%, 5%, 1);
-	
-	animation-name: homeForm;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+	font-style: normal;
 }
 
-.home-form li {
+.home-form:hover {
 /* 	border: 1px red solid; */
-	/* display: block; */
-/* 	transform: translate(0px, 0px); */
-	color: hsla(210, 5%, 50%, 0) !important;
-	font-size: 4vw;
-}
-
-@keyframes homeForm {
-    0% {	}
-    10% {	}
-    40% {	}
-    100% {	}
-}
-
-.home-form li:nth-child(1) {
-	text-transform: uppercase;
-  animation: winkle 1s linear;
-}
-.home-form li:nth-child(2) {
-	text-transform: lowercase;
-  animation: winkle 1s linear 2s;
-}
-.home-form li:nth-child(3) {
-	font-size: 5vw;
+/*	font-size: 5vw;*/
+	font-weight: 400;
+	color: hsla(210, 5%, 5%, 1);
 	font-style: italic;
-	color: hsla(210, 5%, 5%, 1) !important;
-  animation: winkle-permanent 4s linear 0s;
-}
-.home-form li:nth-child(4) {
-	text-transform: capitalize;
-  animation: winkle 1s linear 1s;
-}
-/* .home-form li:nth-child(5) {
-	text-transform: lowercase;
-  animation: winkle 1s linear 1s;
-} */
+	letter-spacing: -0.25vw;
+	
+	background-color: hsla(49,100%,47%,1.00) !important;
+	transition: background-color 0.5s ease-in-out 0s;
 
-@keyframes winkle {
-  0%, 100% {	color: hsla(210, 5%, 5%, 0);}
-  25%, 75% {		color: hsla(210, 5%, 5%, 1);}
-}
-
-@keyframes winkle-permanent {
-  0%, 80% {		color: hsla(210, 5%, 5%, 0);}
-  90%, 100% {	color: hsla(210, 5%, 5%, 1);}
 }
 
 .home-structure {
@@ -248,55 +222,32 @@ html, body {
 	font-size: 5vw;
 	text-align: center;
 	color: hsla(210, 5%, 5%, 1);
-	
-	animation-name: homeForm;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
-.home-structure li {
+.home-structure:hover {
 /* 	border: 1px red solid; */
-/* 	display: block; */
-	transform: translate(0px, 0px);
-	color: hsla(210, 5%, 80%, 1);
-	font-size: 4vw;
-}
-
-.home-structure li:nth-child(1) {
+/*	font-size: 5vw;*/
+	text-align: center;
+	color: hsla(210, 5%, 5%, 1);
 	font-family: cursive;
-  animation: changeStructure 1s linear;
-}
-.home-structure li:nth-child(2) {
-	font-family: serif;
-  animation: changeStructure 1s linear 2s;
-}
-.home-structure li:nth-child(3) {
-/* 	font-size: 5vw; */
-	font-family: sans-serif;
-  animation: changeStructurePermanent 4s linear 0s;
-}
-.home-structure li:nth-child(4) {
-	font-family: fantasy;
-  animation: changeStructure 1s linear 3s;
-}
-.home-structure li:nth-child(5) {
-	font-family: monospace;
-  animation: changeStructure 1s linear 1s;
+	
+	background-color: hsla(332,100%,43%,1.00) !important;
+	transition: background-color 0.5s ease-in-out 0s;
 }
 
-@keyframes changeStructure {
-  0% {		color: hsla(210, 5%, 5%, 0); transform: translate(0px, 20px)}
-  100% {	color: hsla(210, 5%, 5%, 1);}
+.home-texture {
+	font-size: 5vw;
+	text-align: center;
+	color: hsla(210, 5%, 5%, 1);
 }
 
-@keyframes changeStructurePermanent {
-  0%, 80% {		}
-  90%, 100% {	}
+.home-texture:hover {
+	text-align: center;
+	color: hsla(210, 5%, 5%, 1);
+	
+	background-color: hsla(148,100%,40%,1.00) !important;
+	transition: background-color 0.5s ease-in-out 0s;
 }
-
 
 .home-texture li {
 	transform: translate(-1vw, 0);
@@ -344,12 +295,18 @@ html, body {
 /*     100% {	transform: translate(0, 0);} */
 }
 
-
 .home-colour {
+	font-size: 5vw;
+}
+
+.home-colour:hover {
 	color: hsla(0, 100%, 50%, 1);
+	
+	background-color: hsla(354,73%,49%,1.00) !important;
+	transition: background-color 0.5s ease-in-out 0s;
 
 	animation-name: homeColour;
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -365,8 +322,27 @@ html, body {
 }
 
 .home-direction {
+	font-size: 5vw;
+}
+
+.home-direction:hover {
+/*	font-size: 5vw;*/
+	background-color: hsla(294,48%,40%,1.00) !important;
+	transition: background-color 0.5s ease-in-out 0s;
+}
+
+.home-direction span {
+		
+	padding: 7.5vw 3vw;
+	border-radius: 50%;
+	
+/*	border: 1px solid red;*/
+}
+
+.home-direction span:hover {
 	transform: rotate(30deg);
 	color: hsla(210, 5%, 5%, 1);
+
 
 	animation-name: homeDirection;
     animation-duration: 4s;
@@ -387,7 +363,7 @@ html, body {
 .home-links a:last-child {
 	background-image: url("../images/Dair3.jpg");
 	background-size: auto;
-	background-position: 80%, 40%;
+	background-position: 80% 70%;
 	background-color: red;
 	/* mix-blend-mode: hard-light; */
 	
@@ -399,7 +375,8 @@ html, body {
 	width: 100%;
 	height: 100%;
 	
-	background-color: hsla(210, 5%, 95%, .5);
+	background-color: hsla(216,5%,80%,1.00);
+	transition: background-color 1s;
 	
 /* 	border: 1px red solid; */
 	
@@ -408,7 +385,13 @@ html, body {
 	justify-content: center;
 }
 
+.home-links a div:hover {
+	background-color: hsla(38,85%,59%,0.5);
+/*	background-blend-mode: multiply;*/
+}
+
 .home-bio {
+	font-size: 5vw;
 	text-align: center;
 	color: hsla(210, 5%, 5%, .8) !important;
 /* 	opacity: 1 !important; */
@@ -471,25 +454,25 @@ a {
 	font-size: 1.7vw;
 	font-weight: normal;
 	
-	color: hsla(0,5%,50%,1.00);
+	color: hsla(0,5%,15%,1.00);
 	
 	transition: font-weight .15s ease-in 0s;
 }
 
-a:hover {
+nav a:hover {
 	font-weight: bold;
 }
 
 /*General Illustration*/
 
-.7-contasts-main {
+.seven-contasts-main {
 	width: 75vw;
 /*	height: 100%;*/
 	
 /*	border: pink 1px solid;*/
 }
 
-.7-contasts-main article {
+.seven-contasts-main article {
 	height: 25vh;
 	display: flex;
 	justify-content: flex-start;
@@ -503,6 +486,8 @@ p {
 	padding-bottom: 6vmin;
 	font-size: 12pt;
 	text-indent: 1.5em;
+	line-height: 1.2;
+/*	text-align: justify*/
 }
 
 .increase-size-of-house {
@@ -530,7 +515,7 @@ p {
 }
 
 @keyframes increaseSize {
-    from {font-size: 18pt;}
+    from {font-size: 36pt;}
     to {font-size: 144pt;}
 }
 
@@ -538,8 +523,8 @@ p {
 	font-size: 144pt;
 	font-weight:normal;
     animation-name: increaseSize;
-    animation-duration: 1.5s;
-	animation-timing-function: ease;
+    animation-duration: 2s;
+	animation-timing-function: ease-in-out;
 	animation-delay: 0s;
 	animation-iteration-count: 1;
     animation-direction: alternate;	
@@ -561,8 +546,8 @@ p {
 /* 	font-size: 144pt; */
 	font-weight:900;
     animation-name: increaseWeight;
-    animation-duration: 1.5s;
-	animation-timing-function: ease;
+    animation-duration: 1s;
+	animation-timing-function: ease-in-out;
 	animation-delay: 0s;
 	animation-iteration-count: 1;
     animation-direction: alternate;	
@@ -627,6 +612,7 @@ p {
 
 .structure-illustration {
 	font-size: 24pt;
+	line-height: 1.2
 }
 
 @keyframes changeStructure {
@@ -715,7 +701,7 @@ p {
 
 .top-layer {
 	position:absolute;
-	left: 45%;
+	left: 42.5%;
 	border: 50%;
 /*     background-color:red; */
 	z-index: 9999;
@@ -804,7 +790,7 @@ p {
 }
 
 .direction-illustration {
-	width: 40%;
+	width: auto;
 	height: 40%;
 /* 	border: red 1px solid; */
 	
