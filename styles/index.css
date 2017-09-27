@@ -149,7 +149,7 @@ html, body {
 } */
 
 .home-size {
-	font-size: 5vw;
+	font-size: 4vw;
 /*	font-weight: bold;*/
 	color: hsla(210, 5%, 5%, 1);
 }
@@ -170,12 +170,12 @@ html, body {
 }
 
 @keyframes homeSize {
-    0%, 70%, 100% {	font-size: 5vw;}
+    0%, 70%, 100% {	font-size: 4vw;}
     40%, 60%	{	font-size: 2vw;}
 }
 
 .home-weight {
-	font-size: 5vw;
+	font-size: 4vw;
 	font-weight: 400;
 	color: hsla(210, 5%, 5%, 1);
 }
@@ -202,7 +202,7 @@ html, body {
 }
 
 .home-form {
-	font-size: 5vw;
+	font-size: 4vw;
 	font-weight: 400;
 	color: hsla(210, 5%, 5%, 1);
 	font-style: normal;
@@ -223,7 +223,7 @@ html, body {
 
 .home-structure {
 /* 	border: 1px red solid; */
-	font-size: 5vw;
+	font-size: 4vw;
 	text-align: center;
 	color: hsla(210, 5%, 5%, 1);
 }
@@ -240,7 +240,7 @@ html, body {
 }
 
 .home-texture {
-	font-size: 5vw;
+	font-size: 4vw;
 	text-align: center;
 	color: hsla(210, 5%, 5%, 1);
 	line-height: 0.0;
@@ -256,7 +256,7 @@ html, body {
 }
 
 .home-colour {
-	font-size: 5vw;
+	font-size: 4vw;
 }
 
 .home-colour:hover {
@@ -282,7 +282,7 @@ html, body {
 }
 
 .home-direction {
-	font-size: 5vw;
+	font-size: 4vw;
 }
 
 .home-direction:hover {
@@ -324,9 +324,10 @@ html, body {
 	background-image: url("../images/Dair3.jpg");
 	background-size: auto;
 	background-position: 80% 70%;
-	background-color: red;
+/*	background-color: red;*/
 	/* mix-blend-mode: hard-light; */
 	
+	font-size: 4vw;
 /* 	opacity: .5; */
 /* 	border: 1px solid red; */
 }
