@@ -84,7 +84,7 @@ html, body {
 	
 	justify-content: flex-start;
 /* 	align-items: flex-end; */
-	align-content: flex-end;
+	align-content: flex-start;
 	
 /* 	border: 1px red solid; */
 }
@@ -95,16 +95,21 @@ html, body {
 	color: hsla(210, 5%, 10%, 1);
 	display: block;
 	
+	margin-left: 3.2vw;
+	
 /* 	border: 1px red solid; */
 }
 
 .home-header h2 {
-	font-size: 5vmax;
+	font-size: 6vmax;
 	font-weight: 700;
-	color: hsla(210, 5%, 50%, 1);
-	margin-top: 2vh;
-	margin-bottom: 2vh;
+/*	color: hsla(210, 5%, 50%, 1);*/
+	color: hsla(5,70%,50%,1.00);
+	margin-top: 1vh;
+	margin-bottom: 6vh;
 	display: block;
+	
+	margin-left: 3.2vw;
 	
 /* 	border: 1px red solid; */
 }
@@ -153,7 +158,7 @@ html, body {
 .home-size:hover {
 /*	font-size: 8vw;*/
 /*	color: hsla(210, 5%, 5%, 1);*/
-	background-color: hsla(223,67%,46%,1) !important;
+/*	background-color: hsla(223,67%,46%,1) !important;*/
 
 	animation-name: homeSize;
     animation-duration: 2.5s;
@@ -166,7 +171,7 @@ html, body {
 }
 
 @keyframes homeSize {
-    0%, 30%, 70%, 100% {	font-size: 5vw;}
+    0%, 70%, 100% {	font-size: 5vw;}
     40%, 60%	{	font-size: 2vw;}
 }
 
@@ -179,7 +184,7 @@ html, body {
 .home-weight:hover {
 	font-weight: 900;
 	color: hsla(210, 5%, 5%, 1);
-	background-color: hsla(22,100%,49%,1.00) !important;
+/*	background-color: hsla(22,100%,49%,1.00) !important;*/
 	transition: background-color 0.5s ease-in-out 0s;
 
 	animation-name: homeWeight;
@@ -212,7 +217,7 @@ html, body {
 	font-style: italic;
 	letter-spacing: -0.25vw;
 	
-	background-color: hsla(49,100%,47%,1.00) !important;
+/*	background-color: hsla(49,100%,47%,1.00) !important;*/
 	transition: background-color 0.5s ease-in-out 0s;
 
 }
@@ -231,7 +236,7 @@ html, body {
 	color: hsla(210, 5%, 5%, 1);
 	font-family: cursive;
 	
-	background-color: hsla(332,100%,43%,1.00) !important;
+/*	background-color: hsla(332,100%,43%,1.00) !important;*/
 	transition: background-color 0.5s ease-in-out 0s;
 }
 
@@ -239,60 +244,16 @@ html, body {
 	font-size: 5vw;
 	text-align: center;
 	color: hsla(210, 5%, 5%, 1);
+	line-height: 0.0;
+	
+	transition: line-height .25s ease-in-out;
+	
+	display: flex;
+	flex-direction: column;
 }
 
 .home-texture:hover {
-	text-align: center;
-	color: hsla(210, 5%, 5%, 1);
-	
-	background-color: hsla(148,100%,40%,1.00) !important;
-	transition: background-color 0.5s ease-in-out 0s;
-}
-
-.home-texture li {
-	transform: translate(-1vw, 0);
-	font-size: 4vw;
-	line-height: .33;
-	color: hsla(210, 5%, 5%, 1);
-
-	animation-name: homeTexture;
-    animation-duration: 5s !important;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    
-/*     border: 1px solid red; */
-}
-
-.home-texture li:nth-child(1) {
-	margin-left: -.75vw;
-	opacity: .25;
-	animation: homeTexture 5s ease 0s infinite normal;
-}
-
-.home-texture li:nth-child(2) {
-	margin-left: .0vw;
-		opacity: .5;
-	animation: homeTexture 5s ease .25s infinite normal;
-}
-
-.home-texture li:nth-child(3) {
-	margin-left: .75vw;
-		opacity: .75;
-	animation: homeTexture 5s ease .5s infinite normal;
-}
-
-.home-texture li:nth-child(4) {
-	margin-left: 1.5vw;
-	animation: homeTexture 5s ease .75s infinite normal;
-}
-
-@keyframes homeTexture {
-    0%, 75% 	{	transform: translate(-1vw, 0);}
-    25%, 50%	{	transform: translate(1vw, 0);}
-/*     60%, 80% {	transform: translate(-2vw, 0);} */
-/*     100% {	transform: translate(0, 0);} */
+	line-height:0.3;
 }
 
 .home-colour {
@@ -302,7 +263,7 @@ html, body {
 .home-colour:hover {
 	color: hsla(0, 100%, 50%, 1);
 	
-	background-color: hsla(354,73%,49%,1.00) !important;
+/*	background-color: hsla(354,73%,49%,1.00) !important;*/
 	transition: background-color 0.5s ease-in-out 0s;
 
 	animation-name: homeColour;
@@ -327,7 +288,7 @@ html, body {
 
 .home-direction:hover {
 /*	font-size: 5vw;*/
-	background-color: hsla(294,48%,40%,1.00) !important;
+/*	background-color: hsla(294,48%,40%,1.00) !important;*/
 	transition: background-color 0.5s ease-in-out 0s;
 }
 
@@ -371,7 +332,7 @@ html, body {
 /* 	border: 1px solid red; */
 }
 
-.home-links a div {
+.home-links a .bio-div {
 	width: 100%;
 	height: 100%;
 	
@@ -385,15 +346,16 @@ html, body {
 	justify-content: center;
 }
 
-.home-links a div:hover {
-	background-color: hsla(38,85%,59%,0.5);
+.home-links a .bio-div:hover {
+/*	background-color: hsla(38,85%,59%,0.5);*/
+	background-color: hsla(0,0%,60%,0.50);
 /*	background-blend-mode: multiply;*/
 }
 
 .home-bio {
 	font-size: 5vw;
 	text-align: center;
-	color: hsla(210, 5%, 5%, .8) !important;
+/*	color: hsla(210, 5%, 5%, .8) !important;*/
 /* 	opacity: 1 !important; */
 }
 
@@ -446,7 +408,10 @@ nav {
 .nav-selected {
 /* 	font-weight: bold; */
 /* 	text-decoration: underline; */
-	opacity: .5;
+	font-size: 140%;
+	font-weight: 700;
+	color: hsla(5,70%,50%,1.00);
+/*	opacity: .5;*/
 }
 
 a {
@@ -485,7 +450,7 @@ p {
 	padding-left: 4vmin;
 	padding-bottom: 6vmin;
 	font-size: 12pt;
-	text-indent: 1.5em;
+/*	text-indent: 1.5em;*/
 	line-height: 1.2;
 /*	text-align: justify*/
 }
@@ -533,8 +498,14 @@ p {
 /*weight Illustration*/
 
 .weight-illustration {
-	font-weight: 100;
-	font-size: 48pt;
+/*	font-weight: 100;*/
+/*	font-size: 48pt;*/
+	
+	width: 300pt;
+	height: 200pt;
+/* 	border: red 1px solid; */
+	
+	transform: translate(-4vw, 5vh);
 }
 
 @keyframes increaseWeight {
@@ -611,8 +582,8 @@ p {
 /*Structure Illustration*/
 
 .structure-illustration {
-	font-size: 24pt;
-	line-height: 1.2
+/*	font-size: 24pt;*/
+	line-height: 1.2;
 }
 
 @keyframes changeStructure {
@@ -623,7 +594,7 @@ p {
 .structure-illustration span {
 /* 	font-size: 144pt; */
 	/* font-family: gotham; */
-	font-size: 125%;
+	font-size: 75%;
 	opacity: 1;
 /* 	transform:translate(99px); */
 /* 	color: pink; */
@@ -668,6 +639,12 @@ p {
 
 .texture-illustration {
 	font-size: 4vmax;
+	
+	width: 400pt;
+	height: 200pt;
+/* 	border: red 1px solid; */
+	
+	transform: translate(-8vw, 5vh);
 }
 
 @keyframes changeTexture {
@@ -687,7 +664,7 @@ p {
 	font-size: 5vmax;
 	opacity: 1;
 /* 	transform:translate(99px); */
-	color: pink;
+	color: hsla(5,70%,50%,1);
 	display: block;
 	
 	animation-name: changeTexture;
@@ -792,9 +769,14 @@ p {
 .direction-illustration {
 	width: auto;
 	height: 40%;
+	
 /* 	border: red 1px solid; */
 	
 	transform: translate(-4vw, 5vh);
+}
+
+.size-illustration span, .weight-illustration span, .form-illustration span, .structure-illustration span, .direction-illustration span {
+	color: hsla(5,70%,50%,1);
 }
 
 @keyframes changeDirection {
@@ -852,36 +834,40 @@ p {
 
 .biography-main {
 	width: 75vw;
-	height: 65vh;
+	height: 100vh;
 	
 	background-image: url("../images/Dair3.jpg");
 	background-size: auto 100vmax;
-	background-position: 75% 50%;
+	background-position: 75% 90%;
 	background-repeat: no-repeat;
 /* 	background-color: pink; */
 /* 	opacity: .25; */
 }
 
 .biography-container {
-	height: 65vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: flex-start;
 }
 
 .biography-container h1 {
 	font-size: 8vw;
-	margin-bottom: 2vh;
+	margin-top: 1vh;
 	margin-left: 2vh;
 	font-weight: bold;
-	color: hsla(210, 15%, 15%, .9);
+/*	color: hsla(210, 15%, 15%, .9);*/
+	color: hsla(5,70%,50%,1.0)
 }
 
 .biography-article {
-	height: 35vh;
+	height: 60vh;
+	width: 49vw;
+	
+	transform: translate(0, -60vh);
 /* 	display: none; */
-	background-color: hsla(210, 2%, 15%, .75);
+	background-color: hsla(210,5%,30%,0.75);
 	overflow-y: scroll;
 }
 
@@ -896,11 +882,29 @@ p {
 }
 
 .biography-article p {
-	color: hsla(210, 5%, 90%, 1);
+	color: hsla(210, 5%, 100%, 1);
 	padding-top: 1vh;
-	padding-bottom: 1vh;
+	padding-bottom: 0vh;
+}
+
+.biography-article p:first-of-type:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
+.biography-article p:first-child {
+	margin-top: 2vh;
 }
 
 .biography-article p:last-child {
 	margin-bottom: 4vh;
+}
+
+.biography-article a {
+	color: white;
+	text-decoration: underline;
+	font-size: medium;
 }
