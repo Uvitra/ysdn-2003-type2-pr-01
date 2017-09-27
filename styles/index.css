@@ -149,7 +149,7 @@ html, body {
 } */
 
 .home-size {
-	font-size: 4vw;
+	font-size: 3vw;
 /*	font-weight: bold;*/
 	color: hsla(210, 5%, 5%, 1);
 }
@@ -170,12 +170,12 @@ html, body {
 }
 
 @keyframes homeSize {
-    0%, 70%, 100% {	font-size: 4vw;}
-    40%, 60%	{	font-size: 2vw;}
+    0%, 70%, 100% {	font-size: 3vw;}
+    40%, 60%	{	font-size: 1vw;}
 }
 
 .home-weight {
-	font-size: 4vw;
+	font-size: 3vw;
 	font-weight: 400;
 	color: hsla(210, 5%, 5%, 1);
 }
@@ -202,7 +202,7 @@ html, body {
 }
 
 .home-form {
-	font-size: 4vw;
+	font-size: 3vw;
 	font-weight: 400;
 	color: hsla(210, 5%, 5%, 1);
 	font-style: normal;
@@ -214,7 +214,7 @@ html, body {
 	font-weight: 400;
 	color: hsla(210, 5%, 5%, 1);
 	font-style: italic;
-	letter-spacing: -0.25vw;
+	letter-spacing: -0.1vw;
 	
 /*	background-color: hsla(49,100%,47%,1.00) !important;*/
 	transition: background-color 0.5s ease-in-out 0s;
@@ -223,7 +223,7 @@ html, body {
 
 .home-structure {
 /* 	border: 1px red solid; */
-	font-size: 4vw;
+	font-size: 3vw;
 	text-align: center;
 	color: hsla(210, 5%, 5%, 1);
 }
@@ -240,7 +240,7 @@ html, body {
 }
 
 .home-texture {
-	font-size: 4vw;
+	font-size: 3vw;
 	text-align: center;
 	color: hsla(210, 5%, 5%, 1);
 	line-height: 0.0;
@@ -256,7 +256,7 @@ html, body {
 }
 
 .home-colour {
-	font-size: 4vw;
+	font-size: 3vw;
 }
 
 .home-colour:hover {
@@ -282,7 +282,7 @@ html, body {
 }
 
 .home-direction {
-	font-size: 4vw;
+	font-size: 3vw;
 }
 
 .home-direction:hover {
@@ -327,7 +327,7 @@ html, body {
 /*	background-color: red;*/
 	/* mix-blend-mode: hard-light; */
 	
-	font-size: 4vw;
+	font-size: 3vw;
 /* 	opacity: .5; */
 /* 	border: 1px solid red; */
 }
@@ -353,7 +353,7 @@ html, body {
 }
 
 .home-bio {
-	font-size: 5vw;
+	font-size: 3vw;
 	text-align: center;
 /*	color: hsla(210, 5%, 5%, .8) !important;*/
 /* 	opacity: 1 !important; */
